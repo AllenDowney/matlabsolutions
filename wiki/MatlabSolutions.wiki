@@ -1,6 +1,6 @@
 #summary Solutions to exercises in Physical Modeling in MATLAB.
 
-= Introduction =
+= How to use this repository =
 
 To view solutions, click on the Source tab and then the Browse tab.
 
