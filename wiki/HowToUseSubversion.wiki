@@ -1,5 +1,7 @@
 #summary General information on Subversion
 
+=Basic Subversion Concepts=
+
 Subversion, abbreviated svn, is a suite of programs for managing
 repositories.  A repository is an archive that keeps track of
 successive versions of electronic documents.  A repository is often
@@ -31,121 +33,91 @@ Before we get to the details, here is an overview of the operations to perform:
    notified when someone comments on your code.  They you should either
    make the requested changes or argue with the reviewer :)
 
-====== The rest of this document is not done =======
+=Subversion Tutorial=
 
 Now here are the details about how you perform each of those
 operations:
 
-0) In order to access your repository, you will need a username and
-   password.  Your username is the same as your Olin email address,
-   without the @students.olin.edu part.  So, for example, my username
-   is allen.downey.  We will send your password to you by email.
+1) To check out the repository, go to the Google Code page for the project,
+click on the Source tab, and follow the instructions.  For example, to check
+out the matlabsolutions repository, type:
 
-   You also may need to install the subversion client (you don't
-   need the server).
-
-   On Ubuntu, run "sudo apt-get install subversion"
-
-   On Fedora, I believe you can "yum install subversion",
-   but I haven't confirmed that that's the right package name.
-
-   On Windows, you can install TortoiseSVN.
-
-
-1) To check out your repository, create a terminal and navigate
-   to your home directory.  Then type
-
-svn --username first.last co https://ssl.untyped.com/svn/repos/olin/first.last
+svn co https://matlabsolutions.googlecode.com/svn/trunk/ matlabsolutions --username yourusername
 
    All svn commands begin with "svn" followed by an operation
    and other arguments.  In this case the operation is "co",
-   which stands for "check out" and the argument is the URL
-   of your repository.
+   which stands for "checkout".  The argument is the URL
+   of the repository; the second is the directory where the local copy will go.
 
-   Of course, you should replace "first.last" with your name.
+   Of course, you should replace "yourusername" with your Google Code name.
+   If you don't have an account on Google Code, you can create one by logging in
+   at code.google.com with a Google account.  If you don't have a Google account,
+   you can create one.
 
-   You will be prompted for your password.  Type your password and
-   hit return.  You should get a message like "Checked out revision 2."  
-
-  
-2) If you type "ls" you should see a new directory with a name like
-   "first.last".  This is your local copy of the repository.
+2) If you type "ls" you should see a new directory named matlabsolutions.  This is your local copy of the repository.
 
    Navigate into this directory and type "ls".  You should see
-   the Swampy files.  Run TurtleWorld.py just to make sure.
+   one directory for each chapter and another directory named "contributors".
 
-   If you have already done Homework 1, you should have a file called
-   hello.py in another directory.  Copy it into this directory and
-   run it, just to make sure. 
+   Navigate into "contributors".  You should see a file for each person who has
+   contributed a solution.  Create a new file with a name like "your.name";
+   you can leave the file empty or write a short bio for yourself.
 
    To notify svn that this file should be considered part of the
    repository, run
 
-svn add hello.py
+svn add your.name
 
-   You should get a message like "A  hello.py".
+   You should get a message like "A  your.name".
 
 
 3) To check in your changes (in this case the added file), type
 
-svn ci -m "Adding homework 1"
+svn ci -m "Adding your.name to contributors"
+
+   The command "ci" stands for "check in".  The -m argument is a message that
+   will appear in the repository logs.
+
+   The first time you check in, you will be prompted for your password.
+   Type your Google Code password, which is not the same as the password for
+   your Google account.  You can get your Google Code password here:
+   https://code.google.com/hosting/settings
 
    You should get a series of messages telling you what svn is
-   doing, ending with something like, "Committed revision 3."
+   doing, ending with something like, "Committed revision XX."
 
    To confirm that the server has the new file, you can use
    a browser to view
 
-   https://ssl.untyped.com/svn/repos/olin/first.last
+http://code.google.com/p/matlabsolutions/source/browse/#svn/trunk/contributors
 
    You should see the new file there.
 
 
-4) You don't do step 4.  I do step 4.
+4) To request a code review, click on your new file, then click on the link
+in the upper right that says "Request code review."  You don't have to change
+any of the default settings; just click "Submit issue".
+
+An "issue" is a record in the tracking system, which keeps track of the to-do
+list for the project.
 
 
-5) If I notify you that I have committed a change to your
-   repository, you should navigate into your repository and run
+5) Whenever you sit down to work on a solution in your local copy, you should
+start by updating the local copy, which means copying any recent changes from
+the repository into your local copy.
+
+To update your local copy, type:
 
 svn update
 
    If you do that now, you should get a message like
-   "At revision 3," which indicates that your local copy
+   "At revision XX," which indicates that your local copy
    is the same as the repository copy.
 
 
-How to turn in Homework 1
--------------------------
+=Links=
 
-1) Navigate into the local copy of your repository.
-
-2) Make a directory for homework 1:
-
-svn mkdir hw01
-
-By using svn to make the directory, you get two operations for
-the price of one: svn makes the new directory and "adds" it to
-the repository.
-
-3) Copy file(s) into the new directory.
-
-svn cp hello.py hw01
-
-Again, using svn to make the copy performs two operations: it
-makes a new file called hw01/hello.py and "adds" it to the
-repository.
-
-4) Check in the changes.
-
-svn ci -m "Adding hw01"
-
-
-Note: please use exactly these names, 'hw01' for the directory
-and 'hello.py' for the file.  That way I can automate the process
-of running your code. 
-
-
-That's all for now.  If you want more information about
+If you want more information about
 Subversion, there are several good guides online, including
 am excellent, and free, book at
 
