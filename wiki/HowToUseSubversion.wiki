@@ -5,8 +5,8 @@
 Subversion, abbreviated svn, is a suite of programs for managing
 repositories.  A repository is an archive that keeps track of
 successive versions of electronic documents.  A repository is often
-(but not necessarily) on a remote server; in this document we will use
-the Google Code server as an example.
+(but not necessarily) on a remote server; for this project, the
+repository is on the Google Code server.
 
 Before we get to the details, here is an overview of the operations to perform:
 
@@ -95,8 +95,18 @@ http://code.google.com/p/matlabsolutions/source/browse/#svn/trunk/contributors
 
 
 4) To request a code review, click on your new file, then click on the link
-in the upper right that says "Request code review."  You don't have to change
-any of the default settings; just click "Submit issue".
+in the upper right that says "Request code review."  
+
+This step is currently broken -- I am waiting for more info.  Skip to step 5.
+
+You can accept most
+of the default settings, but you have to clear the field named "Branch path"
+
+(Technical detail: you will be checking your solution directly into the trunk,
+so we don't need to use a branch.  If you know what that means, great; if not,
+don't worry.)
+
+Next, click "Submit issue".
 
 An "issue" is a record in the tracking system, which keeps track of the to-do
 list for the project.
@@ -114,7 +124,18 @@ svn update
    "At revision XX," which indicates that your local copy
    is the same as the repository copy.
 
-
+=Contributing a solution=
+
+File naming scheme
+   Alternate solutions
+ 
+Style
+
+License
+
+Code review
+
+
 =Links=
 
 If you want more information about
