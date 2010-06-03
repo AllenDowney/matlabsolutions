@@ -1,0 +1,15 @@
+#summary Solutions to exercises in Physical Modeling in MATLAB.
+
+= Introduction =
+
+To view solutions, click on the Source tab and then the Browse tab.
+
+To contribute solutions, follow these steps:
+
+  # Read about HowToUseSubversion.
+  # Check out this repository following the instructions under the Source tab.
+  # Add your solution.
+  # Check in the change (you might have to get permission from Allen).
+  # Alert Allen to do a code review.
+  # Make requested changes, or review other people's changes.
+  # Enjoy the satisfaction of a job well done!
