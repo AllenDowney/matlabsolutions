@@ -31,6 +31,8 @@ Before we get to the details, here is an overview of the operations to perform:
    notified when someone comments on your code.  They you should either
    make the requested changes or argue with the reviewer :)
 
+====== The rest of this document is not done =======
+
 Now here are the details about how you perform each of those
 operations:
 
