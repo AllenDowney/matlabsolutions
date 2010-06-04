@@ -124,7 +124,7 @@ svn update
    "At revision XX," which indicates that your local copy
    is the same as the repository copy.
 
-==Contributing a solution==
+==Contributing a solution==
 
 If the exercise indicates what the name of the file should be, please use that
 name; otherwise, use a name like exercise1.1.m.  And, of course, you should put
