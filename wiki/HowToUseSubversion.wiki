@@ -89,7 +89,7 @@ svn ci -m "Adding your.name to contributors"
    To confirm that the server has the new file, you can use
    a browser to view
 
-http://code.google.com/p/matlabsolutions/source/browse/#svn/trunk/contributors
+   http://code.google.com/p/matlabsolutions/source/browse/#svn/trunk/contributors
 
    You should see the new file there.
 
@@ -152,7 +152,9 @@ am excellent, and free, book at
 http://svnbook.red-bean.com/
 
 And several tutorials at
-
+C
 http://polishlinux.org/apps/subversion-howto/
+
 http://www.linux.com/articles/45381
+
 http://www.onlamp.com/pub/a/onlamp/2002/10/31/subversion.html
