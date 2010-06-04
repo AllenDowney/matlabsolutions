@@ -164,7 +164,11 @@ am excellent, and free, book at
 
 http://svnbook.red-bean.com/
 
-And several tutorials at
+Here's the page that is specific to Subversion at Google Code:
+
+http://code.google.com/p/support/wiki/SubversionFAQ
+
+And there are several tutorials at
 
 http://polishlinux.org/apps/subversion-howto/
 
