@@ -1,6 +1,6 @@
 #summary General information on Subversion
 
-=Basic Subversion Concepts=
+==Subversion Concepts==
 
 Subversion, abbreviated svn, is a suite of programs for managing
 repositories.  A repository is an archive that keeps track of
@@ -33,7 +33,7 @@ Before we get to the details, here is an overview of the operations to perform:
    notified when someone comments on your code.  They you should either
    make the requested changes or argue with the reviewer :)
 
-=Subversion Tutorial=
+==Subversion Tutorial==
 
 Now here are the details about how you perform each of those
 operations:
@@ -124,17 +124,24 @@ svn update
    "At revision XX," which indicates that your local copy
    is the same as the repository copy.
 
-=Contributing a solution=
+==Contributing a solution==
 
-File naming scheme
-   Alternate solutions
- 
-Style
+If the exercise indicates what the name of the file should be, please use that
+name; otherwise, use a name like exercise1.1.m.  And, of course, you should put
+the file in the folder that corresponds to the chapter the exercise is in.
 
-License
+At the beginning of the file, please include comments with the name of the book,
+the author(s) of the solution, and the license.  For example:
 
-Code review
+{{{
+% This file contains code used in "Physical Modeling in MATLAB",
+% by Allen B. Downey, available from greenteapress.com
 
+% Copyright 2010 Allen B. Downey
+% License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
+}}}
+
+As far as coding style goes, please indent the bodies of functions and other code blocks with 4 spaces.  Use capital letters for vector/matrix variables and lowercase letters for scalars.  Use column vectors unless there is a reason not to.  That's all I can think of for now.
 
 =Links=
 
