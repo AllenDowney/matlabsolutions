@@ -25,9 +25,9 @@ it would be more precise to say, "notify svn about a new addition."
 repository, you "check in" (again, by analogy with a library).
 This operation is also called "commit", because by copying your
 changes back to the repository, you are making the changes
-permanent.  But don't be afraid of commitment; your repository
+permanent.  But don't be afraid of commitment; the repository
 keeps track of all prior versions, so if you commit a change and
-then regret it, you can always revert to a prior version.
+then regret it, you can always revert to an earlier version.
 
 4) After you commit a change, you request a code review.  You will be
 notified when someone comments on your code.  They you should either
@@ -133,9 +133,9 @@ To update your local copy, type:
 
 svn update
 
-   If you do that now, you should get a message like
-   "At revision XX," which indicates that your local copy
-   is already the same as the repository copy.
+If you do that now, you should get a message like
+"At revision XX," which indicates that your local copy
+is already the same as the repository copy.
 
 ==Contributing a solution==
 
