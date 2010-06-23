@@ -11,27 +11,27 @@ repository is on the Google Code server.
 Before we get to the details, here is an overview of the operations you will perform:
 
 1) First, you will copy the repository from the server to your
-   computer.  This is called "checking out" (by analogy with checking a
-   book out of a library).  The copy of the repository on your computer
-   is called a "local copy" or "working copy."
+computer.  This is called "checking out" (by analogy with checking a
+book out of a library).  The copy of the repository on your computer
+is called a "local copy" or "working copy."
 
 2) Next you will navigate into the newly-created directory and either
-   modify existing files or add new files and directories.  If you add
-   a new file or directory, you have to tell svn about it.  This
-   operation is called an "add", but that name is a little misleading;
-   it would be more precise to say, "notify svn about a new addition."
+modify existing files or add new files and directories.  If you add
+a new file or directory, you have to tell svn about it.  This
+operation is called an "add", but that name is a little misleading;
+it would be more precise to say, "notify svn about a new addition."
 
 3) When you are ready to copy your changes and additions back to the
-   repository, you "check in" (again, by analogy with a library).
-   This operation is also called "commit", because by copying your
-   changes back to the repository, you are making the changes
-   permanent.  But don't be afraid of commitment; your repository
-   keeps track of all prior versions, so if you commit a change and
-   then regret it, you can always revert to a prior version.
+repository, you "check in" (again, by analogy with a library).
+This operation is also called "commit", because by copying your
+changes back to the repository, you are making the changes
+permanent.  But don't be afraid of commitment; your repository
+keeps track of all prior versions, so if you commit a change and
+then regret it, you can always revert to a prior version.
 
 4) After you commit a change, you request a code review.  You will be
-   notified when someone comments on your code.  They you should either
-   make the requested changes or argue with the reviewer :)
+notified when someone comments on your code.  They you should either
+make the requested changes or argue with the reviewer :)
 
 One note: you might have files in your local copy that are not part of
 the repository.  These files are "not under version control."  In general,
