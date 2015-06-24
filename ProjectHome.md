@@ -1,0 +1,1 @@
+Solutions to exercises in Physical Modeling in MATLAB, by Allen B. Downey, available from greenteapress.com/matlab
